@@ -1,6 +1,6 @@
 ## Table of Contents
 - [Install](#install)
-- [Usage](#usage)
+- [Usage](#basic-usage)
 - [API](#api)
 
 ## Install
@@ -53,7 +53,7 @@ Returns **simple-store**
 
 **Parameters**
 
--   `reducers` **Object** Required. Object full of **[Reducer](#Reducer--function)** functions.
+-   `reducers` **Object** Required. Object full of **[Reducer](#reducer-function)** functions.
 -   `initialState` **Object** Object with the same shape as reducers parameter with initial values to set to state.
 
 #### emit
@@ -62,7 +62,7 @@ Calls all [reducers](#Reducer) in store with `event` and current state and sets 
 
 **Parameters**
 
--   `event` **[Custom event object](#Custom--event--object)** Required. An event object to emit.
+-   `event` **[Custom event object](#custom-event-object)** Required. An event object to emit.
 
 #### getState
 
@@ -103,4 +103,4 @@ If state is mutated but the same object is returned subscribers will not be call
 **Injected parameters**
 
 -   `state` **any js value** Current state.
--   `event` **[Custom event Object](#Custom--event--object)** The `event` which was emitted that caused reducers to be called.
+-   `event` **[Custom event Object](#custom-event-object)** The `event` which was emitted that caused reducers to be called.
