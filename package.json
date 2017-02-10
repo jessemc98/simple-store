@@ -1,5 +1,5 @@
 {
-  "name": "simple-store",
+  "name": "@jessemc98/simple-store",
   "version": "0.0.1",
   "description": "an experimental way to deal with state in javascript, inspired by redux",
   "main": "lib/index.js",
